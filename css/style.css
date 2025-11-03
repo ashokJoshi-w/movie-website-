@@ -58,6 +58,42 @@
     font-size: 20px;
     border: none;
 }
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #111; /* dark background to match navbar */
+  border: 1px solid #333;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.search-box input {
+  background-color: transparent; /* removes white */
+  border: none;
+  outline: none;
+  color: #fff; /* text color */
+  padding: 5px 8px;
+  width: 90px;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.search-box i {
+  color: #ff007a; /* your pink accent color */
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* Fix autofill white background (Chrome, Edge, etc.) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #111 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
 .hamburger{
     display: none;
     flex-direction: column;
@@ -754,7 +790,45 @@ footer .footer-top{
         flex-direction: column;
     }
 }
+/* 📱 Tablets and smaller devices */
+@media (max-width: 768px) {
+  .search-box {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+    justify-content: space-between;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .search-box i {
+    font-size: 18px;
+  }
+}
+
+/* 📱 Small phones */
+@media (max-width: 480px) {
+  .search-box {
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .search-box i {
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 767px){
+     
+    
     
     .upcoming-movie .wrapper .movie-carousel{
         grid-auto-columns: calc((100% / 2) - 15px);
@@ -769,6 +843,41 @@ footer .footer-top{
     .footer-top nav ul,.footer-top .links .text-links{
         justify-content: center;
     }
+    /* 📱 Tablets and smaller devices */
+@media (max-width: 768px) {
+  .search-box {
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+    justify-content: space-between;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .search-box i {
+    font-size: 18px;
+  }
+}
+
+/* 📱 Small phones */
+@media (max-width: 480px) {
+  .search-box {
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+
+  .search-box input {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .search-box i {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 549px){
     .hero .content h1{
