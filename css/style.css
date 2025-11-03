@@ -659,6 +659,17 @@ footer .footer-top{
 }
 
 @media only screen and (max-width: 909px){
+    .hero{
+    background: url(../images/hero\ res\ bg.JPG) no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 90vh;   
+    max-height: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 30px;
+}
     .hamburger{
         display: flex;
     }
